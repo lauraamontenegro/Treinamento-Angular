@@ -9,7 +9,9 @@
 </span>
   <div>
     <ul>
-      <li *ngFor="let tarefaItem of tarefasArray">{{tarefaItem}}</li>
+      <li *ngFor="let tarefaItem of tarefasArray">{{tarefaItem}}
+        <i (click)="removerTarefa(tarefaItem)">apagar</i>
+      </li>
     </ul>
   </div>
 </div>

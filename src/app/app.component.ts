@@ -11,11 +11,17 @@ tarefasArray: string [] = [];
 adicionarTarefa(valor:string){
   this.tarefasArray.push(valor);
   console.log("Adicionando uma tarefa");
-
-  //concatenando no angular
+//concatenando no angular
   console.log(`Adicionando a tarefa: ${valor}`);
 }
 
+removerTarefa(valor:string){
+for (let i = this.tarefasArray.length; i >= 0; i--) {
+if(valor== this.tarefasArray[i]){
+  this.tarefasArray.splice(i, 1);
+}
+}
+}
   constructor() {
 
   }
